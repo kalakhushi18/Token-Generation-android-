@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgboundary"
+    >
+
+<!--    navbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:id="@+id/linear"
+        android:background="@drawable/linearcolor"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_bold"
+            android:textColor="#fff"
+            android:id="@+id/tokengenerateCounter"
+            android:text="Token Generate"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:fontFamily="@font/gotham_bold"
+            android:textStyle="bold"
+
+            android:id="@+id/historyCounter"
+            android:textColor="#fff"
+            android:text="Get History"></TextView>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:id="@+id/detailsCounter"
+            android:fontFamily="@font/gotham_bold"
+            android:textColor="#fff"
+            android:text="Counter Details"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/counter_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="118dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:fontFamily="@font/gotham_bold"
+        android:gravity="center"
+        android:text="Counter Details"
+        android:textColor="@color/textfield_tint"
+        android:textSize="25dp"
+        android:textStyle="bold"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/counter_details_text"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyler_counter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

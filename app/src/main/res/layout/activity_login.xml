@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgboundary"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:fontFamily="@font/gotham_bold"
+        android:gravity="center"
+        android:text="login"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email_msg"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginLeft="51dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="58dp"
+        android:layout_marginRight="58dp"
+        android:background="@color/grey_other"
+        android:fontFamily="@font/gotham_medium"
+        android:text="Verify Otp "
+        android:textColor="@color/textfield_tint"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/emailLogin"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="55dp"
+
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center_horizontal"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/orange" />
+
+    <EditText
+        android:id="@+id/otp"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/send_email"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginLeft="112dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:fontFamily="@font/gotham_medium"
+        android:gravity="center"
+        android:hint="Enter OTP"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColorHint="@color/orange" />
+
+    <Button
+        android:id="@+id/send_email"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailLogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="121dp"
+        android:layout_marginLeft="121dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="18dp"
+        android:background="@color/grey_other"
+        android:fontFamily="@font/gotham_medium"
+        android:text="Send Email"
+        android:textColor="@color/textfield_tint" />
+
+    <TextView
+        android:id="@+id/Email_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/otp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginLeft="101dp"
+        android:layout_marginTop="76dp"
+        android:text="Please enter correct otp  "
+        android:textColor="@color/red"
+        android:textSize="18dp"
+        android:visibility="invisible" />
+
+<!--    <Button-->
+<!--        android:id="@+id/resend"-->
+<!--        android:layout_width="140dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/verify"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_alignParentLeft="true"-->
+
+<!--        android:layout_marginStart="136dp"-->
+<!--        android:layout_marginLeft="136dp"-->
+
+<!--        android:layout_marginTop="73dp"-->
+<!--        android:background="@color/grey_other"-->
+<!--        android:text="Resend Otp"-->
+<!--        android:textColor="@color/textfield_tint" />-->
+
+</RelativeLayout>

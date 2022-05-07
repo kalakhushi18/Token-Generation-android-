@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="100dp"
+    android:padding="2dp"
+
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/boundary"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="100dp"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter Name :"
+            android:textSize="20dp"
+            android:fontFamily="@font/gotham_bold"
+            android:textStyle="bold"
+
+            android:layout_gravity="center"
+            android:padding="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:fontFamily="@font/gotham_medium"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:textColor="@color/orange"
+            android:background="@color/grey_other"
+            android:id="@+id/counterNumber"
+            ></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="1dp"
+        android:layout_height="100dp"
+        android:background="@color/grey_other"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:minHeight="100dp"
+        android:layout_marginLeft="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Token No. :"
+            android:textSize="20dp"
+
+            android:textStyle="bold"
+            android:fontFamily="@font/gotham_bold"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            ></TextView>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:background="@color/grey_other"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:fontFamily="@font/gotham_medium"
+            android:id="@+id/tokennumber"
+
+            ></TextView>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

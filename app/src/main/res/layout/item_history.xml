@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+<!--    first column -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp">
+<!--        first-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/gotham_bold"
+                ></TextView>
+            <TextView
+                android:id="@+id/name_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABC"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+<!--second-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Age :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/orange"
+                android:fontFamily="@font/gotham_bold"
+                ></TextView>
+            <TextView
+                android:id="@+id/age_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+<!--     third  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:textColor="@color/orange"
+                ></TextView>
+            <TextView
+                android:id="@+id/disease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+<!--        fourth-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:textColor="@color/orange"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+<!--        fourth end -->
+
+    </LinearLayout>
+
+
+<!--    second column start-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp">
+        <!--        first-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:textColor="@color/orange"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+        <!--second-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:textColor="@color/orange"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+        <!--     third  -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:textColor="@color/orange"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+        <!--        fourth-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="3dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/gotham_bold"
+                android:textColor="@color/orange"
+                ></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="value"
+                android:textSize="17dp"
+                android:fontFamily="@font/gotham_medium"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"></TextView>
+        </LinearLayout>
+        <!--        fourth end -->
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
